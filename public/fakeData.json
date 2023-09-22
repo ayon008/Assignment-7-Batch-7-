@@ -1,0 +1,54 @@
+[
+    {
+        "id": 1,
+        "image": "../src/assets/1.jpg",
+        "author": [
+            {
+                "authorImg": "../src/assets/boy1.png",
+                "name": "Shariar Ayon",
+                "time": 6
+            }
+        ],
+        "title": "Learn JavaScript to become an Web Developer",
+        "date": "2023-09-22"
+    },
+    {
+        "id": 2,
+        "image": "../src/assets/2.png",
+        "author": [
+            {
+                "authorImg": "../src/assets/boy2.png",
+                "name": "Mohammad Roni",
+                "time": 7
+            }
+        ],
+        "title": "Welcome to programming World",
+        "date": "2023-03-12"
+    },
+    {
+        "id": 3,
+        "image": "../src/assets/3.png",
+        "author": [
+            {
+                "authorImg": "../src/assets/girl1.jpg",
+                "name": "Tanvir Ahmed",
+                "time": 10
+            }
+        ],
+        "title": "What do we have to know about react.js?",
+        "date": "2023-06-20"
+    },
+    {
+        "id": 4,
+        "image": "../src/assets/4.jpg",
+        "author": [
+            {
+                "authorImg": "../src/assets/girl2.jpg",
+                "name": "Mahdi Hasan",
+                "time": 3
+            }
+        ],
+        "title": "How to get your first job as a self-taught programmer",
+        "date": "2023-08-21"
+    }
+]
