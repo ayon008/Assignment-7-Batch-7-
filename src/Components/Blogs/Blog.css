@@ -3,7 +3,8 @@
     padding-bottom: 30px;
 }
 
-.author-table p , .hash-tags {
+.author-table p,
+.hash-tags {
     color: rgba(17, 17, 17, 0.60);
     font-family: Exo 2;
     font-style: normal;
@@ -30,6 +31,7 @@
 .authorDetails img {
     width: 60px;
     height: 60px;
+    border-radius: 50%;
 }
 
 .authorDetails p,
