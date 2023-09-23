@@ -7,7 +7,7 @@ import Container from './Components/Container/Container'
 
 function App() {
   return (
-    <div>
+    <div className='App'>
       <Header></Header>
       <Container></Container>
     </div>
