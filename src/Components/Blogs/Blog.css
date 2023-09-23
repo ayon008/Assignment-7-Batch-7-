@@ -3,7 +3,7 @@
     padding-bottom: 30px;
 }
 
-.blog p {
+.author-table p , .hash-tags {
     color: rgba(17, 17, 17, 0.60);
     font-family: Exo 2;
     font-style: normal;
@@ -11,7 +11,7 @@
     line-height: 160%;
 }
 
-.blog a:hover {
+.link:hover {
     text-decoration: underline;
 }
 
@@ -45,4 +45,8 @@ h4 {
 
 span {
     margin-bottom: 20px;
+}
+
+.link {
+    color: #6047EC;
 }

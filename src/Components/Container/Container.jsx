@@ -23,15 +23,24 @@ const Container = () => {
         setBlogLists(uniqueBlogList);
     }
 
+    const [timeArray, setTimeArray] = useState([])
+    const markButton = passedBlog => {
+        let newArray = [...timeArray, passedBlog];
+        const existing = newArray.find(singleTime => singleTime.id === passedBlog.id);
+        const remaining = newArray.filter(singleTime => singleTime.id !== passedBlog.id);
+        newArray = [...remaining, existing];
+        setTimeArray(newArray);
+    }
+   
     return (
         <div className='container'>
             <div className='blogs'>
                 {
-                    blogs.map(blog => <Blog button={buttonHandle} key={blog.id} data={blog}></Blog>)
+                    blogs.map(blog => <Blog markButton={markButton} button={buttonHandle} key={blog.id} data={blog}></Blog>)
                 }
             </div>
             <div className='bookmarks'>
-                <Bookmarks blogs={blogLists}></Bookmarks>
+                <Bookmarks showTime={timeArray} blogs={blogLists}></Bookmarks>
             </div>
         </div>
     );

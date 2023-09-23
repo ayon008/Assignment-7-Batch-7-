@@ -9,6 +9,7 @@ const Blog = props => {
     const authorName = author[0].name;
     const readTime = author[0].time;
     const buttonFunction = props.button;
+    const markAsRead = props.markButton;
     return (
         <div className='blog'>
             <div className='img'>
@@ -25,12 +26,12 @@ const Blog = props => {
                     </div>
                 </div>
                 <div>
-                    <p>{readTime} min read <FontAwesomeIcon onClick={()=>buttonFunction(props.data)} icon={faBookmark} /></p>
+                    <p>{readTime} min read <FontAwesomeIcon onClick={() => buttonFunction(props.data)} icon={faBookmark} /></p>
                 </div>
             </div>
             <h2>{title}</h2>
-            <p>#beginners  #programming</p>
-            <a href="">Mark as Read</a>
+            <p className='hash-tags'>#beginners  #programming</p>
+            <p className='link' onClick={() => markAsRead(props.data)}>Mark as Read</p>
         </div>
     );
 };
