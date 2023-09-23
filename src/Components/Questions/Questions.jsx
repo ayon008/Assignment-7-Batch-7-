@@ -4,7 +4,7 @@ const Questions = () => {
     return (
         <div>
             <div>
-                <h1>What is the difference between Props and State?</h1>
+                <h1>What are the differences between Props and State?</h1>
                 <p><strong>Ans:</strong> The basic difference between Props and state  are
                     <ol type='1'>
                         <li>Props is a functional component passing data from parent to child where state manages internal component data</li>
